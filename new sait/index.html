@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Пендорак Захарій">
+    <meta name="copyright" content="© 2025 Massage Salon. Всі права захищені.">
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
     <title>Massage Salon</title>
     <style>
         /* Базова стилізація */
@@ -61,6 +68,47 @@
             .hero h1 { font-size: 2rem; }
             .gallery-grid img { flex: 1 1 100%; }
         }
+        .contact-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-phone {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #006644;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-phone:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #006644;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #004422;
+}
+
+.social-icons svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
     </style>
 </head>
 <body>
@@ -96,13 +144,16 @@
             <p>Професійний масаж для здоров’я та гарного самопочуття</p>
         </div>
     </section>
+<section id="fastbuy">
 
+    </section>
     <section id="about">
         <h2>Про нас</h2>
         <div class="about-container">
             <img src="images/about.jpg" alt="Наш салон">
             
-            <p>Наш салон поєднує сучасні техніки масажу з атмосферою комфорту й затишку. Ми дбаємо про кожного клієнта!</p>
+            <p><strong>Наш масажний салон</strong> поєднує сучасні техніки <strong>масажу</strong> з атмосферою комфорту й затишку. <strong>Ми дбаємо про кожного клієнта</strong>!</p>
+
         </div>
     </section>
 
@@ -110,19 +161,22 @@
         <h2>Наші послуги</h2>
         <div class="flex-row">
             <div class="card" id="swedish">
-                <img src="images/service1.jpg" alt="Шведський масаж">
+                <img src="images/service1.jpg" alt="Шведський масаж" loading="lazy">
                 <h3>Шведський масаж</h3>
-                <p>Опис шведського масажу...</p>
+                <p><strong>Шведський масаж</strong> — це класичний вид <strong>масажу</strong>, який знімає напругу, покращує кровообіг та сприяє <strong>релаксації</strong>.</p>
+
             </div>
             <div class="card" id="thai">
-                <img src="images/service2.jpg" alt="Тайський масаж">
+                <img src="images/service2.jpg" alt="Тайський масаж" loading="lazy">
                 <h3>Тайський масаж</h3>
-                <p>Опис тайського масажу...</p>
+                <p><strong>Тайський масаж</strong> стимулює енергетичні точки тіла, допомагає відновити сили та забезпечує <strong>глибоке розслаблення</strong>.</p>
+
             </div>
             <div class="card" id="hotstone">
-                <img src="images/service3.jpg" alt="Масаж з камінням">
+                <img src="images/service3.jpg" alt="Масаж з камінням" loading="lazy">
                 <h3>Гарячі камені</h3>
-                <p>Опис процедури з гарячими каменями...</p>
+                <p><strong>Масаж гарячими каменями</strong> глибоко прогріває м’язи, зменшує стрес і сприяє <strong>повному відновленню</strong> після навантажень.</p>
+
             </div>
         </div>
     </section>
@@ -130,35 +184,46 @@
     <section id="gallery">
         <h2>Фотогалерея</h2>
         <div class="gallery-grid">
-            <img src="images/gallery1.jpg" alt="">
-            <img src="images/gallery2.jpg" alt="">
-            <img src="images/gallery3.jpg" alt="">
-            <img src="images/gallery4.jpg" alt="">
-            <img src="images/gallery5.jpg" alt="">
-            <img src="images/gallery6.jpg" alt="">
+            <img src="images/gallery1.jpg" alt=" Фото 1" loading="lazy">
+            <img src="images/gallery2.jpg" alt="Фото 2" loading="lazy">
+            <img src="images/gallery3.jpg" alt="Фото 3" loading="lazy">
+            <img src="images/gallery4.jpg" alt="Фото 4" loading="lazy">
+            <img src="images/gallery5.jpg" alt="Фото 5" loading="lazy">
+            <img src="images/gallery6.jpg" alt="Фото 6" loading="lazy">
         </div>
     </section>
 
     <section id="prices">
         <h2>Ціни</h2>
+        <p><strong>Доступні ціни</strong> на якісний <strong>масаж</strong> — обирайте свій пакет послуг від стандарту до VIP.</p>
+
         <div class="flex-row">
-            <div class="price-card">
-                <h3>Стандарт</h3>
-                <p>60 хв — 500 грн</p>
-            </div>
-            <div class="price-card">
-                <h3>Преміум</h3>
-                <p>90 хв — 800 грн</p>
-            </div>
-            <div class="price-card">
-                <h3>VIP</h3>
-                <p>120 хв — 1200 грн</p>
-            </div>
-        </div>
+    <div class="price-card">
+        <h3>Стандарт</h3>
+        <p>60 хв — 500 грн</p>
+        <p>Ідеально для щоденного розслаблення та зняття напруги.</p>
+        <a href="#contact" class="btn">Замовити</a>
+    </div>
+    <div class="price-card">
+        <h3>Преміум</h3>
+        <p>90 хв — 800 грн</p>
+        <p>Глибший вплив та розширений спектр технік масажу.</p>
+        <a href="#contact" class="btn">Замовити</a>
+    </div>
+    <div class="price-card">
+        <h3>VIP</h3>
+        <p>120 хв — 1200 грн</p>
+        <p>Повний релакс з індивідуальним підходом до кожного клієнта.</p>
+        <a href="#contact" class="btn">Замовити</a>
+    </div>
+</div>
+
     </section>
 
     <section id="contact">
-        <h2>Зв’яжіться з нами</h2>
+        <h2><strong>Зв’яжіться з нами</strong></h2>
+<p>Наш <strong>масажний салон</strong> завжди відкритий для ваших запитань. Залиште заявку, і ми вам зателефонуємо.</p>
+
         <div class="contact-form">
             <form action="#" method="post">
                 <fieldset>
@@ -179,6 +244,34 @@
     </section>
 </main>
 
+<div class="contact-bottom">
+  <a href="tel:+380123456789" class="contact-phone">+38 (012) 345-67-89</a>
+  
+  <div class="social-icons">
+    <a href="https://instagram.com/yourprofile" target="_blank" rel="nofollow noopener noreferrer" aria-label="Instagram">
+      <!-- Instagram SVG іконка -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <!-- сюди можна вставити SVG path іконки Instagram -->
+        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.1 2.35a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+      </svg>
+    </a>
+    <a href="https://facebook.com/yourprofile" target="_blank" rel="nofollow noopener noreferrer" aria-label="Facebook">
+      <!-- Facebook SVG іконка -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <!-- вставити SVG код Facebook -->
+        <path d="M22 12a10 10 0 10-11.5 9.87v-6.99h-2.18v-2.88h2.18v-2.2c0-2.16 1.28-3.36 3.25-3.36.94 0 1.93.17 1.93.17v2.13h-1.1c-1.08 0-1.42.67-1.42 1.36v1.9h2.42l-.39 2.88h-2.03v6.99A10 10 0 0022 12z"/>
+      </svg>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" rel="nofollow noopener noreferrer" aria-label="X">
+      <!-- Twitter (або X) SVG іконка -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <!-- вставити SVG код Twitter/X -->
+        <path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.09 9.09 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.13A12.84 12.84 0 013 4.75a4.52 4.52 0 001.4 6.03 4.46 4.46 0 01-2.05-.56v.06a4.52 4.52 0 003.63 4.43 4.52 4.52 0 01-2.04.08 4.52 4.52 0 004.22 3.14A9.05 9.05 0 013 19.54a12.79 12.79 0 006.92 2.03c8.3 0 12.84-6.87 12.84-12.84 0-.2 0-.42-.02-.63A9.18 9.18 0 0023 3z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
 <footer class="site-footer">
     <p>© 2025 Massage Salon. Всі права захищені.</p>
 </footer>
@@ -189,6 +282,7 @@
     toggle.addEventListener('click', () => {
         navList.classList.toggle('nav-open');
     });
+
 </script>
 </body>
 </html>
